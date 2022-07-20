@@ -50,7 +50,7 @@ namespace xadrez
                     break;
                 }
                 pos.Coluna = pos.Coluna + 1;
-
+            }
                 //esquerda
                 pos.DefinirValores(Posicao.Linha, Posicao.Coluna - 1);
                 while (Tabuleiro.PosicaoValida(pos) && PodeMover(pos))
@@ -62,7 +62,7 @@ namespace xadrez
                     }
                     pos.Coluna = pos.Coluna - 1;
                 }
-            }
+            
 
             return mat;
         }
